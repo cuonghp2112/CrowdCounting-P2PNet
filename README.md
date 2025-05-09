@@ -162,3 +162,6 @@ If you find P2PNet is useful in your project, please consider citing us:
 ## Related works from Tencent Youtu Lab
 - [AAAI2021] To Choose or to Fuse? Scale Selection for Crowd Counting. ([paper link](https://ojs.aaai.org/index.php/AAAI/article/view/16360) & [codes](https://github.com/TencentYoutuResearch/CrowdCounting-SASNet))
 - [ICCV2021] Uniformity in Heterogeneity: Diving Deep into Count Interval Partition for Crowd Counting. ([paper link](https://arxiv.org/abs/2107.12619) & [codes](https://github.com/TencentYoutuResearch/CrowdCounting-UEPNet))
+
+
+docker build -t p2pnet-cpu .
