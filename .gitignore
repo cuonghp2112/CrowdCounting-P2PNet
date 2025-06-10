@@ -1,4 +1,3 @@
 weights/vgg16_bn-6c64b313.pth
 vis/*.jpg
-logs/*jpg
-test_img/
+**/__pycache__/
