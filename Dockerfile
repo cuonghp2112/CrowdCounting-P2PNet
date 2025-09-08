@@ -27,12 +27,13 @@ COPY requirements.txt .
 
 # Install dependencies
 RUN pip install -r requirements.txt -f https://download.pytorch.org/whl/torch_stable.html
+RUN pip install fastapi uvicorn tritonclient[http]
 
 # Copy the rest of the application code into the container
 COPY . .
 
-# Expose port for Gradio
-EXPOSE 7860
+# Expose FastAPI port
+EXPOSE 9000
 
-# Set the default command to run the Gradio demo
-CMD ["python", "run_test_gradio.py"]
+# Run FastAPI with uvicorn
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "9000"]
